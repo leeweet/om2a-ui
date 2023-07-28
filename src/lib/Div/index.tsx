@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-export default function HelloWorld(props: { greetee: string }) {
+export default function Div(props: { greetee: string }) {
   const {
     greetee = ''
   } = props
@@ -9,6 +9,6 @@ export default function HelloWorld(props: { greetee: string }) {
   )
 }
 
-HelloWorld.prototype = {
+Div.prototype = {
   greete: PropTypes.string
 }

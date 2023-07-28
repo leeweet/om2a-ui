@@ -1,11 +1,11 @@
 import renderer from 'react-test-renderer'
 import { describe, expect, test } from 'vitest'
-import HelloWorld from './index'
+import Div from './index'
 
-describe('HelloWorld', () => {
-  test('HelloWorld component renders correctly', () => {
+describe('Div', () => {
+  test('Div component renders correctly', () => {
     const component = renderer.create(
-      <HelloWorld greetee={'World'} />
+      <Div greetee={'World'} />
     )
 
     const tree = component.toJSON()
@@ -15,7 +15,7 @@ describe('HelloWorld', () => {
 
   test('The greetee prop works', () => {
     const component = renderer.create(
-      <HelloWorld greetee={'World'} />
+      <Div greetee={'World'} />
     )
 
     const tree = component.toJSON()
